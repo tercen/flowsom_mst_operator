@@ -3,7 +3,7 @@
   "description": "Generate plots of FlowSOM Minimum Spanning Trees.",
   "tags": ["data visualisation"],
   "authors": ["tercen"],
-  "container": "tercen/flowsom_mst_operator:latest",
+  "container": "tercen/flowsom_mst_operator:0.0.2",
   "urls": ["https://github.com/tercen/flowsom_mst_operator"],
   "properties": [
   {
