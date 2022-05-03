@@ -1,22 +1,22 @@
-# Template ggplot operator
+# FlowSOM MST operator
 
 ##### Description
 
-The template ggplot operator demonstrates how to generate a barplot image and markdown components based on the input projection.
+The FlowSOM MST operator represents Minimum Spanning Trees based on a fitted
+FlowSOM model.
 
 ##### Usage
 
 Input projection|.
 ---|---
-`y-axis`        | numeric, values to be used in the y axis
-`x-axis` (optional) | numeric / factor, values to be used in the x axis
-`row` (optional) | factor, factor to be used to separate panels by rows 
-`column` (optional) | factor, factor to be used to separate panels by columns 
-`colors`        | factor, values to be used to color the bars
+`labels`        | factor, FlowSOM model ID (as output by the `flowsom_operator`)
 
 Input parameters|.
 ---|---
-`input_var`        | parameter description
+`plot.width`    | numeric, plot width (pixels, default is 750)
+`plot.height`   | numeric, plot height (pixels, default is 750)
+`maxNodeSize`   | numeric, maximal node size for scaling
+`plot.markers`  | shall individual marker plots be displayed? Default is FALSE.
 
 Output relations|.
 ---|---
@@ -24,4 +24,5 @@ Output relations|.
 
 ##### Details
 
-The computation is based on the `ggplot2` R package.
+The computation is based on the `PlotStars` and `PlotMarker` functions
+from the `FlowSOM` R package.
